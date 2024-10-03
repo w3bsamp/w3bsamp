@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: #00171F;
+    color: white;
+}
+
+#principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 80px 4%;
+}
+
+#principal h1{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+#principal h2{
+    color: #EB0216;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+#principal p{
+    width: 716px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#principal a{
+    padding: 10px;
+    background-color: #EB0216;
+    color: white;
+    text-decoration: none;
+}
+
+#tech{
+    display: flex;
+    justify-content: center;
+    gap: 59px;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: #000608;
+    padding: 38px;
+}
+
+i{
+    font-size: 68px;
+}
+
+.box h1{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+.box p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+#projetos{
+    padding: 80px 4%;
+}
+
+#projetos h1{
+    font-weight: 800;
+    font-size: 24.7126px;
+    line-height: 30px;
+}
+
+#projetos p{
+    font-weight: 500;
+    font-size: 16.4751px;
+    line-height: 20px;
+}
+
+.boxprojeto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 593px;
+    height: 345px;
+    background-color: #000608;
+}
+
+iframe{
+    width: 562px;
+    height: 271px;
+}
+
+.txt-projeto{
+    padding: 20px;
+}
