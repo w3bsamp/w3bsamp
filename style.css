@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root{
+    --antiflash-white: #efefefff;
+    --spring-green: #04f06aff;
+    --azure: #3185fcff;
+    --black: #070707ff;
+    --charcoal: #464655ff;
+}
+
 *{
     margin: 0;
     padding: 0;
