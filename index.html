@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +11,55 @@
 <body>
     <header>
         <menu>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <div class="flex">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
         </menu>
     </header>
     <main>
         <section id="principal">
-            <div class="txt-principal">
-                <h1><span>Raphael Trindade</span></h1>
-                <p>Atualmente cursando Análise e Desenvolvimento de Sistemas</p>
-                <a href="#sobre-mim" class="btn">Sobre-mim</a>
+            <div class="flex">
+                <div class="txt-principal">
+                    <h1><span>Raphael Trindade</span></h1>
+                    <p>Atualmente cursando Análise e Desenvolvimento de Sistemas</p>
+                    <a href="#sobre-mim" class="btan">Sobre-mim</a>
+                </div>
             </div>
         </section>
+
+        <section id="sobre-mim">
+            <div class="flex">
+                <div>
+                    <h1>Olá, meu nome é<br><span>Raphael Marques Nunes Trindade</span>.</h1>
+                    <p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas, onde estou aprimorando minhas habilidades em programação e desenvolvimento de software. Sou apaixonado por tecnologia e estou sempre em busca de aprender novas linguagens e ferramentas que possam me ajudar a criar soluções inovadoras. Além disso, estou aberto a desafios e oportunidades que possam me permitir aplicar meu conhecimento em projetos práticos.</p>
+                    <a href="https://github.com/w3bsamp" target="_blank"><i class="bi bi-github" id="icone"></i></a>
+                    <a href="https://instagram.com/_raphaeltrindade" target="_blank"><i class="bi bi-instagram" id="icone"></i></a>
+                    <a href="https://www.linkedin.com/in/raphael-marques-nunes-trindade-b03577258/" target="_blank"><i class="bi bi-linkedin" id="icone"></i></a>
+                </div>
+                <img src="assets/eu.png" alt="Imagem de Raphael Marques Nunes Trindade.">
+            </div>
+        </section>
+        <section id="projetos">
+                <div class="txt-projetos">
+                    <h1><span>Meus Projetos</span></h1>
+                    <p>veja abaixo todos meus projetos desenvolvidos por mim.</p>
+                </div>
+                <div class="flex">
+                    <div class="box">
+                        <img src="assets/alo 1.png" alt="">
+                        <h1>Projeto Discover</h1>
+                        <p>Projeto de Encurtador de Link, desenvolvimento juntamente com equipe Rocketseat</p>
+                        <a href="https://w3bsamp.github.io/encurtador/" class="btan" target="_blank">Acesse o Projeto</a>
+                    </div>
+                </div>
+        </section>
         <section id="info">
-            <h2><span>Atualmente estudando as seguintes linguagens:</span></h2>
-            <div class="container">
+            <h1><span>Atualmente estudando as seguintes linguagens:</span></h1>
+            <div class="flex">
                 <div class="box-info">   
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="icon"/>
                     <h1>HTML</h1>
@@ -51,33 +82,9 @@
                 </div>
             </div>
         </section>
-        <section id="sobre-mim">
-            <div class="txt-sobre">
-                <h1>Olá, meu nome é<br><span>Raphael Marques Nunes Trindade</span>.</h1>
-                <p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas, onde estou aprimorando minhas habilidades em programação e desenvolvimento de software. Sou apaixonado por tecnologia e estou sempre em busca de aprender novas linguagens e ferramentas que possam me ajudar a criar soluções inovadoras. Além disso, estou aberto a desafios e oportunidades que possam me permitir aplicar meu conhecimento em projetos práticos.</p>
-                <a href="https://github.com/w3bsamp" target="_blank"><i class="bi bi-github"></i></a>
-                <a href="https://instagram.com/_raphaeltrindade" target="_blank"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/raphael-marques-nunes-trindade-b03577258/" target="_blank"><i class="bi bi-linkedin"></i></a>
-            </div>
-            <img src="assets/eu.png" alt="Imagem de Raphael Marques Nunes Trindade.">
-        </section>
-        <section id="projetos">
-            <div class="txt-projeto">
-                <h1><span>Meus Projetos</span></h1>
-                <p>veja abaixo todos meus projetos desenvolvidos por mim.</p>
-            </div>
-            <div class="container">
-                <div class="box">
-                    <img src="assets/alo 1.png" alt="">
-                    <h1>Projeto Discover</h1>
-                    <p>Projeto de Encurtador de Link, desenvolvimento juntamente com equipe Rocketseat</p>
-                    <a href="https://w3bsamp.github.io/encurtador/" class="btn" target="_blank">Acesse o Projeto</a>
-                </div>
-            </div>
-        </section>
         <section id="contato">
-            <h2><span>Contate-me</span></h2>
-            <div class="container">
+            <h1><span>Contate-me</span></h1>
+            <div class="flex">
                 <div class="contact">
                     <i class="bi bi-envelope"></i>
                     <h1>E-mail</h1>
@@ -87,10 +94,10 @@
                     <i class="bi bi-phone"></i>
                     <h1>Redes Sociais</h1>
                     <div class="redes">
-                        <a href="https://wa.me/5562994949553" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                        <a href="https://instagram.com/_raphaeltrindade" target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a href="https://github.com/w3bsamp" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/raphael-marques-nunes-trindade-b03577258/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/5562994949553" target="_blank"><i class="bi bi-whatsapp" id="icone"></i></a>
+                        <a href="https://instagram.com/_raphaeltrindade" target="_blank"><i class="bi bi-instagram" id="icone"></i></a>
+                        <a href="https://github.com/w3bsamp" target="_blank"><i class="bi bi-github" id="icone"></i></a>
+                        <a href="https://www.linkedin.com/in/raphael-marques-nunes-trindade-b03577258/" target="_blank"><i class="bi bi-linkedin" id="icone"></i></a>
                     </div>
                 </div>
             </div>
