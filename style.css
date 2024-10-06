@@ -51,7 +51,7 @@ span{
 
 .btan{
     background-color: var(--spring-green);
-    color: var(--cor-fonte);
+    color:  black;
     padding: 10px;
     display: inline-block;
     border-radius: 10px;
@@ -74,7 +74,7 @@ span{
 }
 
 #icone:hover{
-    background-color: var(--bg-container-hover);
+    color: var(--spring-green);
 }
 
 .icon{
@@ -312,37 +312,58 @@ footer a:hover{
     border-radius: 999px;
 }
 
-@media (max-width: 393px){
-    header{
-        display: none;
-    }
-    #principal h1{
-        font-size: 38px;
-    }
-    #principal p{
-        font-size: 10px;
-    }
-    .btan{
-        font-size: 8px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #principal{
+        padding: 40px;
     }
     #sobre-mim{
-        padding: 20px;
-    }
-    #sobre-mim .flex{
-        align-items: center;
-        gap: 20px;
-    }
-    #sobre-mim h1{
-        font-size: 13px;
-    }
-    #sobre-mim p{
-        font-size: 7px;
+        padding: 10px;
     }
     #sobre-mim img{
-        width: 103px;
-        height: 135px;
+        display: none;
     }
-    #icone{
-        font-size: 10px;
+    #projetos{
+        padding: 10px;
     }
+    .box{
+        padding: 20px;
+    }
+    #info .flex{
+        flex-direction: column;
+        padding: 20px;
+    }
+    #contato{
+        padding: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    #sobre-mim img{
+        display: none;
+    }
+    #projetos{
+        height: 80vh;
+    }
+    #info .flex{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
