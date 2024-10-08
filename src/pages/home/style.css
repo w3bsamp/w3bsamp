@@ -1,0 +1,30 @@
+:root{
+    --cor-fonte: #FFFFFF;
+}
+
+span{
+    color: #04F06A;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+menu{
+    font-family: 'Caveat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & ul li{
+        display: inline-block;
+        font-size: 39px;
+        padding-top: 13px;
+        padding-left: 52px;
+    }
+    & ul li a{
+        color: var(--cor-fonte);
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
