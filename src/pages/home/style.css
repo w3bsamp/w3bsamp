@@ -19,7 +19,7 @@ span {
 
 .btna {
     display: inline-block;
-    font-size: 21px;
+    font-size: 15px;
     background-color: var(--cor-destaque);
     color: var(--cor-btn);
     padding: 10px;
@@ -66,9 +66,6 @@ body {
 
 menu {
     font-family: 'Caveat';
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     & ul li {
         display: inline-block;
@@ -89,8 +86,12 @@ menu {
     }
 }
 
+menu .flex{
+    justify-content: center;
+    align-items: center;
+}
+
 section#principal {
-    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,7 +152,6 @@ section#principal {
 }
 
 .box {
-
     height: 480px;
     width: 400px;
     background-color: var(--fundo-container);
@@ -199,7 +199,6 @@ form {
     gap: 30px;
     padding: 30px;
     border-radius: 10px;
-    max-width: 50%;
     width: 500px;
     margin-bottom: 20px;
 
@@ -226,5 +225,79 @@ form {
         font-size: 16px;
         padding-left: 10px;
         outline: none;
+    }
+}
+
+footer{
+    padding: 20px;
+}
+
+footer .flex{
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    menu{
+        display: none;
+    }
+    section#principal{
+        text-align: center;
+        flex-direction: column;
+
+        & img{
+            display: none;
+        }
+
+        & h2 {
+            font-size: 20px;
+            font-weight: lighter;
+        }
+    
+        & h1 {
+            font-size: 90px;
+            font-weight: 500;
+        }
+    
+        & p {
+            padding: 20px 0;
+            font-size: 21px;
+        }
+    }
+    #skills .flex{
+        flex-wrap: wrap;
+    }
+    .box{
+        height: 460px;
+        width: 300px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .tela {
+        height: 200px;
+        width: 280px;
+
+        & .tela:hover{
+            transform: scale(1.04);
+        }
+    
+        & h1 {
+            padding-top: 17px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+    
+        & p {
+            font-size: 15px;
+            padding-bottom: 18px;
+        }
+    
+        & a {
+            font-size: 15px;
+            margin-left: 22px;
+        }
+    }
+    footer .flex{
+        flex-direction: column;
     }
 }

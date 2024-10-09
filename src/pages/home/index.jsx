@@ -8,13 +8,14 @@ function Home() {
     <>
       <header>
         <menu>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Sobre-mim</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
+          <div className="flex">
+            <ul>
+              <li><a href="index.jsx">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
         </menu>
       </header>
       <main>
@@ -24,11 +25,12 @@ function Home() {
             <h1><span>Raphael Trindade</span></h1>
             <h2>sou estudante de <span className='cursive'>Análise e Desenvolvimento de Sistemas</span></h2>
             <p>Atualmente morando em Goiânia, estudante na faculdade Anhanguera cursando graduação em <span>Análise e Desenvolvimento de Sistemas</span>. Sou fascinado por tecnologia e programação, sempre busco evoluir é dar meu melhor em TUDO.</p>
+            <a href="#projetos" className='btna'>Meus Projetos</a>
             <div className="redes">
-              <a href="#" className='icon'><i class="bi bi-github"></i></a>
-              <a href="#" className='icon'><i class="bi bi-instagram"></i></a>
-              <a href="#" className='icon'><i class="bi bi-linkedin"></i></a>
-              <a href="#" className='icon'><i class="bi bi-whatsapp"></i></a>
+              <a href="https://github.com/w3bsamp" className='icon' target='_blank'><i class="bi bi-github"></i></a>
+              <a href="https://www.instagram.com/_raphaeltrindade" className='icon' target='_blank'><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/raphael-marques-nunes-trindade-b03577258/" className='icon' target='_blank'><i class="bi bi-linkedin"></i></a>
+              <a href="https://wa.me/5562994949553" className='icon' target='_blank'><i class="bi bi-whatsapp"></i></a>
             </div>
           </div>
           <div className="imagem">
@@ -68,8 +70,8 @@ function Home() {
                 <div className='tela' style={{ backgroundImage: `url(${project1})` }}></div>
                 <h1>Encurtador de Link</h1>
                 <p>Este é um projeto onde criei um Encurtador de Link para poder facilitar meus clientes a por exemplo, acessar meu portfolio, entrar em contato comigo, entre outros.</p>
-                <a href="#" className='btna'>Ir para o Projeto</a>
-                <a href="#" className='btna'>GitHub</a>
+                <a href="https://w3bsamp.github.io/encurtador" className='btna' target='_blank'>Ir para o Projeto</a>
+                <a href="https://github.com/w3bsamp" className='btna' target='_blank'>GitHub</a>
               </div>
             </div>
           </div>
@@ -88,6 +90,19 @@ function Home() {
           </div>
         </section>
       </main>
+      <footer>
+        <div className="flex">
+          <div>
+            Criado e Desenvolvido por <span className='cursive'>Raphael Trindade</span>.
+          </div>
+          <div className="redes">
+            <a href="https://github.com/w3bsamp" className='icon' target='_blank'><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/_raphaeltrindade" className='icon' target='_blank'><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/raphael-marques-nunes-trindade-b03577258/" className='icon' target='_blank'><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/5562994949553" className='icon' target='_blank'><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }
