@@ -299,5 +299,6 @@ footer .flex{
     }
     footer .flex{
         flex-direction: column;
+        text-align: center;
     }
 }

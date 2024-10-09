@@ -10,7 +10,7 @@ function Home() {
         <menu>
           <div className="flex">
             <ul>
-              <li><a href="index.jsx">Home</a></li>
+              <li><a href="https://w3bsamp.github.io/w3bsamp/">Home</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#projetos">Projetos</a></li>
               <li><a href="#contato">Contato</a></li>
