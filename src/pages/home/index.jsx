@@ -2,10 +2,12 @@ import { useState } from 'react'
 import './style.css'
 import img from '../../assets/img.png'
 import project1 from '../../assets/encurt.png'
+import project2 from '../../assets/previsao.png'
 
 function Home() {
   return (
     <>
+    <body className='light'>
       <header>
         <menu>
           <div className="flex">
@@ -74,6 +76,15 @@ function Home() {
                 <a href="https://github.com/w3bsamp" className='btna' target='_blank'>GitHub</a>
               </div>
             </div>
+            <div className="box">
+              <div className="tela">
+                <div className='tela' style={{ backgroundImage: `url(${project2})` }}></div>
+                <h1>Previsão do Clima</h1>
+                <p>Este é um projeto onde criei um app para ver a Previsão do Tempo, pode se ver de todas as cidades do mundo.</p>
+                <a href="https://w3bsamp.github.io/previsaoclima" className='btna' target='_blank'>Ir para o Projeto</a>
+                <a href="https://github.com/w3bsamp" className='btna' target='_blank'>GitHub</a>
+              </div>
+            </div>
           </div>
         </section>
         <section id='competencias'>
@@ -103,6 +114,7 @@ function Home() {
           </div>
         </div>
       </footer>
+      </body>
     </>
   )
 }

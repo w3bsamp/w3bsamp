@@ -1,8 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 :root {
+    --cor-bg: #000000;
     --cor-fonte: #FFFFFF;
     --cor-btn: #000000;
     --cor-destaque: #04F06A;
     --fundo-container: #1A1A1D;
+}
+
+.light{
+    --cor-bg: #FFFFFF;
+    --cor-fonte: #000000;
+    --cor-destaque: #04F06A;
+    --fundo-container: #1A1A1D;
+    --cor-container: #FFFFFF;
 }
 
 span {
@@ -62,6 +77,7 @@ span {
 body {
     font-family: 'Poppins';
     color: var(--cor-fonte);
+    background-color: var(--cor-bg);
 }
 
 menu {
@@ -100,7 +116,7 @@ section#principal {
 
     & h2 {
         font-size: 16px;
-        font-weight: lighter;
+        font-weight: 400;
     }
 
     & h1 {
@@ -123,6 +139,7 @@ section#principal {
 
 .skill {
     background-color: var(--fundo-container);
+    color: var(--cor-container);
     border-radius: 10px;
     padding: 20px;
     transition: 0.5s;
@@ -141,8 +158,7 @@ section#principal {
 }
 
 #projetos {
-    height: 100dvh;
-    padding: 15px;
+    padding: 40px 4%;
 }
 
 #projetos .flex {
@@ -155,6 +171,7 @@ section#principal {
     height: 480px;
     width: 400px;
     background-color: var(--fundo-container);
+    color: var(--cor-container);
     border-radius: 10px;
     padding: 20px;
 }
@@ -266,6 +283,9 @@ footer .flex{
     }
     #skills .flex{
         flex-wrap: wrap;
+    }
+    #projetos .flex{
+        flex-direction: column;
     }
     .box{
         height: 460px;
