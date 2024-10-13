@@ -5,13 +5,22 @@ import project1 from '../../assets/encurt.png'
 import project2 from '../../assets/previsao.png'
 
 function Home() {
-  function theme(){
+  function toggleMode(){
+    const html = document.documentElement
+    html.classList.toggle('light')
 
-  }
+    const img = document.querySelector('#profile img')
+
+    if(html.classList.contains('light')){
+        img.setAttribute('src', 'img/eu.jpg')
+    } else {
+        img.setAttribute('src', 'img/eu.jpg')
+    }
+}
   return (
     <>
     <body className=''>
-      <button className='switch' onClick={theme}>Trocar tema</button>
+      <button className='switch' onClick={toggleMode}>Trocar tema</button>
       <header>
         <menu>
           <div className="flex">
