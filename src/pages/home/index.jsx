@@ -5,9 +5,13 @@ import project1 from '../../assets/encurt.png'
 import project2 from '../../assets/previsao.png'
 
 function Home() {
+  function theme(){
+
+  }
   return (
     <>
-    <body className='light'>
+    <body className=''>
+      <button className='switch' onClick={theme}>Trocar tema</button>
       <header>
         <menu>
           <div className="flex">

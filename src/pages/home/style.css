@@ -254,6 +254,13 @@ footer .flex{
     align-items: center;
 }
 
+.switch{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: auto;
+}
+
 @media only screen and (max-width: 600px) {
     menu{
         display: none;
