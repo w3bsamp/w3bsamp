@@ -259,6 +259,11 @@ footer .flex{
     bottom: 20px;
     right: 20px;
     z-index: auto;
+    padding: 10px;
+    background-color: var(--cor-destaque);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
